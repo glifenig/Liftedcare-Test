@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Complete your profile - Therapy App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4cae4f",
+                        "background-light": "#f6f7f6",
+                        "background-dark": "#151d15",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top Bar & Header Section -->
+<div class="bg-primary/10 dark:bg-primary/5 pb-10">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button aria-label="Go back" class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center justify-start hover:bg-primary/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Complete your profile</h2>
+</div>
+<!-- Avatar Section -->
+<div class="flex flex-col items-center justify-center pt-6 px-4">
+<div class="relative">
+<div class="size-32 rounded-full border-4 border-white dark:border-slate-800 overflow-hidden shadow-lg bg-primary/20">
+<img alt="Profile avatar" class="h-full w-full object-cover" data-alt="A portrait of a smiling woman wearing a stylish hijab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5mxfyFIzLQqWVKTo_gSLd6456fbmRgGOZ2BUWnRHhKgfGxuPOR_YsEb1G2AIJufJU67_1-gl4PQeLcqX1YT5hHE1VCUu6Qku0wgdrQJRAvH5JHLmhaSsGv7PfVBx4VHC25Nb7UUIAFkE8iu5quwvm8AjCqOAik9QmlWfuET9Ge7YNRDkfr2EHB1Y7V348xc3m2J2nWMXcXHnhAmwDbLIqqmExJh2CbqJFj0JanUgMqJHtI3sc6YmQ8uVy6GPXa9VN3UR9sCHxGw"/>
+</div>
+<button aria-label="Edit avatar" class="absolute bottom-0 right-0 bg-primary text-white p-2 rounded-full shadow-md hover:bg-primary/90 transition-colors border-2 border-white dark:border-slate-800">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 tracking-light text-2xl font-bold leading-tight px-4 text-center pb-2 pt-6">Help us get to know you better.</h3>
+</div>
+</div>
+<!-- Form Section -->
+<div class="flex flex-col flex-1 -mt-6 bg-white dark:bg-slate-900 rounded-t-[2rem] shadow-2xl px-6 pt-8 pb-10 max-w-md mx-auto w-full">
+<div class="space-y-5">
+<!-- First Name -->
+<label class="flex flex-col gap-2">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-semibold uppercase tracking-wider">First Name</span>
+<input class="form-input flex w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary h-14 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Enter your first name" type="text" value=""/>
+</label>
+<!-- Last Name -->
+<label class="flex flex-col gap-2">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-semibold uppercase tracking-wider">Last Name</span>
+<input class="form-input flex w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary h-14 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="Enter your last name" type="text" value=""/>
+</label>
+<!-- Date of Birth -->
+<label class="flex flex-col gap-2">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-semibold uppercase tracking-wider">Date of Birth</span>
+<div class="relative">
+<input class="form-input flex w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary h-14 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="DD/MM/YY" type="date"/>
+</div>
+</label>
+<!-- Profession -->
+<label class="flex flex-col gap-2">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-semibold uppercase tracking-wider">Profession</span>
+<input class="form-input flex w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-primary h-14 px-4 text-base font-normal placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="e.g. Software Engineer" type="text" value=""/>
+</label>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 pt-10 mt-auto">
+<button class="flex-1 h-14 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary/5 transition-colors flex items-center justify-center">
+                    Back
+                </button>
+<button class="flex-1 h-14 rounded-xl bg-primary text-white font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20 flex items-center justify-center">
+                    Save
+                </button>
+</div>
+</div>
+<div class="h-6 bg-white dark:bg-slate-900"></div>
+</div>
+</body></html>
