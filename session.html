@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Upcoming Sessions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4cae4f",
+                        "background-light": "#f6f7f6",
+                        "background-dark": "#151d15",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full max-w-md mx-auto flex-col bg-white dark:bg-background-dark shadow-xl overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-white dark:bg-background-dark border-b border-primary/10">
+<div class="flex items-center p-4 justify-between">
+<button class="text-slate-900 dark:text-slate-100 hover:bg-background-light dark:hover:bg-slate-800 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Upcoming Sessions</h1>
+</div>
+<!-- Horizontal Date Picker -->
+<div class="pb-3 overflow-x-auto no-scrollbar">
+<div class="flex px-4 gap-4 min-w-max">
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl bg-primary text-white shadow-md shadow-primary/20">
+<span class="text-xs font-medium uppercase opacity-90">Mon</span>
+<span class="text-lg font-bold">12</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl border border-primary/10 text-slate-500 dark:text-slate-400 hover:bg-primary/5 transition-colors">
+<span class="text-xs font-medium uppercase">Tue</span>
+<span class="text-lg font-bold">13</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl border border-primary/10 text-slate-500 dark:text-slate-400 hover:bg-primary/5 transition-colors">
+<span class="text-xs font-medium uppercase">Wed</span>
+<span class="text-lg font-bold">14</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl border border-primary/10 text-slate-500 dark:text-slate-400 hover:bg-primary/5 transition-colors">
+<span class="text-xs font-medium uppercase">Thu</span>
+<span class="text-lg font-bold">15</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl border border-primary/10 text-slate-500 dark:text-slate-400 hover:bg-primary/5 transition-colors">
+<span class="text-xs font-medium uppercase">Fri</span>
+<span class="text-lg font-bold">16</span>
+</button>
+<button class="flex flex-col items-center justify-center min-w-[64px] py-3 rounded-xl border border-primary/10 text-slate-500 dark:text-slate-400 hover:bg-primary/5 transition-colors">
+<span class="text-xs font-medium uppercase">Sat</span>
+<span class="text-lg font-bold">17</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Session List Container -->
+<main class="flex-1 p-4 space-y-4 pb-24">
+<h2 class="text-slate-900 dark:text-slate-100 text-base font-bold mb-2">Today, 12 Oct</h2>
+<!-- Session Card 1 (Active/Next) -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 border border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="flex gap-4">
+<div class="relative">
+<div class="size-14 rounded-full bg-cover bg-center ring-2 ring-primary/20" data-alt="Professional portrait of Dr. Sarah Jenkins" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeDS8825pP2_t0PQpDDVdBKMTZlmWqhbt4cb7CVL4it1jB6MWqDF6kDWavHcQWt_DAa9L6wZClrAaUFedbnJSf7-2iOHxcQdooaLoicEgp_Bng-eALyQQZETviMHNCrYK4oe4X8vgYnophWF8_splo10MRmc7A1tezqPTuzin2Mt24DB_b2co4UAQ7T4B-Z2TBPm-kU1p9b5AWsiR9bSsq23JPq4kqcdrQqNzCd8JsNOR3SfCPFZRBJJ1Op6En1ceeZ9nxHCh26A')">
+</div>
+<div class="absolute bottom-0 right-0 size-4 bg-primary border-2 border-white dark:border-slate-800 rounded-full"></div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-base leading-tight">Dr. Sarah Jenkins</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                                Video Call • 50 mins
+                            </p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-primary font-bold text-sm">10:00 AM</p>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-white font-semibold py-2.5 rounded-lg text-sm hover:bg-primary/90 transition-colors shadow-sm">
+                        Join Session
+                    </button>
+<button class="px-3 py-2.5 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Session Card 2 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="size-14 rounded-full bg-cover bg-center grayscale opacity-80" data-alt="Profile photo of Dr. Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBO8IiXpYnGIz3Z7oeMeuMoTT1DKamsHyYh44_R_3zDsATSHWBXYsBh7OIKrnVANcbXH5873yAkRk2ikcu_jRCdoBXv2WY5QnjlSVhkaGSIAt8rLQfWoa3b176KxT-xm1c_Z5SXSVhVw8psZRvqBYPco6Ag-8VV8ZHQUvC9bH3GpOPT1f9rmHy2CWbKl52eooyy9J0au0q4ANGPozBg96977AJf16UR9DMjt_rztTmUBN-gzdMEBIgT4oMredNitHCcVEdsU_uH-g')">
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-base leading-tight">Dr. Marcus Thorne</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">call</span>
+                                Audio Call • 30 mins
+                            </p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-400 dark:text-slate-500 font-bold text-sm">02:30 PM</p>
+</div>
+</div>
+</div>
+<!-- Session Card 3 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="size-14 rounded-full bg-cover bg-center" data-alt="Portrait of Specialist Elena Rodriguez" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCgwIUkY5qPGu_U_L8oGnUX3CPbW2QQ7bFV2Ilpy9Q2HBzmRfzROIOUmDq6ZzkjBuNn4DhuHlsRzhw9WEQm2Byh2k3T9NrDSQDFF1CWuCfGFBEGTMHv9Oe7M45Riuh5RomjGy06D35iU6JcGBlmedwSB3LRU378HaRyHq8Ftdcus_H9M4-aUIPDVeI7hulnGXkdu7ZH0WDGGp0PQtGwAlSWsMsO9SWFhwQT7SEXryzfxj_zPr67MIrHORFAO-SF9PLSgpHJfZDGA')">
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-base leading-tight">Elena Rodriguez</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                                Video Call • 45 mins
+                            </p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-400 dark:text-slate-500 font-bold text-sm">04:15 PM</p>
+</div>
+</div>
+</div>
+<!-- Section Divider -->
+<div class="pt-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-base font-bold mb-2">Upcoming Tomorrow</h2>
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 border border-slate-100 dark:border-slate-700 opacity-75">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">event</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-slate-100 font-medium">Monthly Assessment</p>
+<p class="text-slate-500 text-xs">Tuesday, 9:00 AM</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 px-6 py-3 pb-6 flex justify-between items-center z-20">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-[1]">calendar_month</span>
+<span class="text-[10px] font-bold">Sessions</span>
+</a>
+<div class="relative">
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-[10px] font-medium">Messages</span>
+</a>
+<span class="absolute -top-1 -right-1 size-2.5 bg-red-500 border-2 border-white dark:border-slate-900 rounded-full"></span>
+</div>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>
