@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LiftedCare - Voice Therapy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#c3c8c3",
+              "on-background": "#151d15",
+              "tertiary-fixed-dim": "#a2ced9",
+              "surface-container-highest": "#e2e6e2",
+              "primary": "#4cae4f",
+              "on-primary-fixed": "#002105",
+              "on-tertiary-fixed-variant": "#214d57",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#410002",
+              "error-container": "#ffdad6",
+              "secondary": "#536353",
+              "secondary-container": "#d6e8d6",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f8f9f8",
+              "surface-tint": "#4cae4f",
+              "surface-container-high": "#e9ece9",
+              "surface-variant": "#dee5de",
+              "primary-fixed": "#d0f0d1",
+              "on-secondary-fixed-variant": "#3c4b3c",
+              "tertiary-fixed": "#beeaf6",
+              "surface-dim": "#f6f7f6",
+              "outline": "#737973",
+              "on-surface": "#151d15",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#3a656f",
+              "on-primary-fixed-variant": "#359439",
+              "on-secondary-container": "#111f11",
+              "primary-fixed-dim": "#b5e3b6",
+              "on-surface-variant": "#434943",
+              "error": "#ba1a1a",
+              "surface": "#ffffff",
+              "inverse-on-surface": "#f0f1f0",
+              "inverse-surface": "#2e312e",
+              "inverse-primary": "#86d988",
+              "on-secondary-fixed": "#111f11",
+              "surface-container": "#f1f3f1",
+              "surface-bright": "#ffffff",
+              "secondary-fixed-dim": "#baccb9",
+              "primary-container": "#d0f0d1",
+              "on-tertiary-container": "#001f26",
+              "on-primary-container": "#0b210b",
+              "on-tertiary-fixed": "#001f26",
+              "on-primary": "#ffffff",
+              "background": "#f6f7f6",
+              "secondary-fixed": "#d6e8d6",
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#beeaf6"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .voice-pulse {
+            box-shadow: 0 0 0 0 rgba(76, 174, 79, 0.4);
+            animation: pulse-ring 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(76, 174, 79, 0.4); }
+            70% { transform: scale(1); box-shadow: 0 0 0 60px rgba(76, 174, 79, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(76, 174, 79, 0); }
+        }
+        .waveform-bar {
+            width: 3px;
+            background-color: #4cae4f;
+            border-radius: 99px;
+            margin: 0 2px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-50/80 dark:bg-slate-950/80 backdrop-blur-md flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400" data-icon="spa">spa</span>
+<h1 class="font-['Inter'] font-bold tracking-tight text-xl text-emerald-700 dark:text-emerald-400">LiftedCare</h1>
+</div>
+<div class="flex items-center gap-4">
+  <a href="settings.html"><button class="p-2 rounded-full hover:bg-emerald-100/50 dark:hover:bg-emerald-900/30 transition-colors">
+<span class="material-symbols-outlined text-slate-500" data-icon="settings">settings</span>
+</button></a>
+</div>
+</header>
+<main class="min-h-screen pt-24 pb-32 px-6 max-w-2xl mx-auto flex flex-col items-center">
+<!-- Screen Title -->
+<div class="text-center mb-8">
+<h2 class="text-2xl font-headline font-bold tracking-tight text-on-surface mb-2">Talk with Emerald AI Therapist</h2>
+<p class="text-on-surface-variant text-sm">Your safe space for mindful conversation</p>
+</div>
+<!-- Suggestion Chips -->
+<div class="flex flex-wrap justify-center gap-2 mb-12">
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all">Depression</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all">ADHD</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all">PTSD</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all border-2 border-primary/20">Anxiety</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all">Loneliness</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-primary-container hover:text-on-primary-container transition-all">Intensity</button>
+</div>
+<!-- Main Visualizer Area -->
+<div class="flex-grow flex flex-col items-center justify-center w-full relative">
+<!-- Pulsing Circle -->
+<div class="relative w-64 h-64 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full voice-pulse bg-primary/10 opacity-30"></div>
+<div class="w-48 h-48 rounded-full bg-surface shadow-sm flex items-center justify-center overflow-hidden border border-primary/10">
+<img alt="Therapist Profile" class="w-full h-full object-cover opacity-80" data-alt="close-up of a calm abstract green marble texture with soft flowing lines and gentle light reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdnjYToJOFTfk1lhccqHVAIz3JqjGFILSmPigH9_XSdcQ1k1PBDn6loX8zd_HSKVLdp5g7Jec7n-kXkoNbu9Q2TyJPnoZGrxxgwWxS54lKJEkIJKyOp0TBAsAQbUhGk7prcBAHVSx5F9Qw-J2-Uu_JIcPI3mL0R7qKn0l3cgPapHGCOBVzOOxrUo2H6K71JAJ7ND32kU2-C0dDn2IK4gugWGtGTNC-q5xxJoks6aiT5dSE3cJbvpL5R4Tb1kxdYUakvOx_6gKHUA"/>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+</div>
+<!-- Waveform Visualizer -->
+<div class="mt-16 flex items-end justify-center h-12 gap-1 w-full max-w-xs">
+<div class="waveform-bar h-4"></div>
+<div class="waveform-bar h-8"></div>
+<div class="waveform-bar h-6"></div>
+<div class="waveform-bar h-12"></div>
+<div class="waveform-bar h-10"></div>
+<div class="waveform-bar h-5"></div>
+<div class="waveform-bar h-9"></div>
+<div class="waveform-bar h-11"></div>
+<div class="waveform-bar h-6"></div>
+<div class="waveform-bar h-4"></div>
+<div class="waveform-bar h-7"></div>
+<div class="waveform-bar h-10"></div>
+<div class="waveform-bar h-3"></div>
+</div>
+<p class="mt-4 text-primary font-bold tracking-widest text-[10px] uppercase">Listening...</p>
+</div>
+<!-- Floating Mic Action -->
+<div class="fixed bottom-28 left-0 w-full flex justify-center px-6">
+<button class="w-20 h-20 bg-primary text-on-primary rounded-full shadow-lg shadow-primary/30 flex items-center justify-center active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-4xl" data-icon="mic_none">mic_none</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg rounded-t-[24px] shadow-[0_-4px_24px_rgba(0,0,0,0.04)] z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-emerald-500 dark:hover:text-emerald-300 transition-all" href="home.html">
+<span class="material-symbols-outlined" data-icon="home_max">home_max</span>
+<span class="text-[10px] font-bold uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-emerald-500 dark:hover:text-emerald-300 transition-all" href="ai.html">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-[10px] font-bold uppercase tracking-wider mt-1">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-emerald-100/50 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-200 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="mic_none" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mic_none</span>
+<span class="text-[10px] font-bold uppercase tracking-wider mt-1">Voice</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2 hover:text-emerald-500 dark:hover:text-emerald-300 transition-all" href="profile.html">
+<span class="material-symbols-outlined" data-icon="person_2">person_2</span>
+<span class="text-[10px] font-bold uppercase tracking-wider mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

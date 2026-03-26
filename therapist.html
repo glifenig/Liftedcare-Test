@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#359439",
+              "on-primary-fixed": "#002105",
+              "surface-container-low": "#f8f9f8",
+              "inverse-primary": "#86d988",
+              "secondary-fixed": "#d6e8d6",
+              "surface": "#ffffff",
+              "surface-container-high": "#e9ece9",
+              "surface-container-lowest": "#ffffff",
+              "surface-tint": "#4cae4f",
+              "tertiary-fixed": "#beeaf6",
+              "surface-container-highest": "#e2e6e2",
+              "primary-fixed-dim": "#b5e3b6",
+              "on-tertiary-fixed-variant": "#214d57",
+              "inverse-surface": "#2e312e",
+              "surface-container": "#f1f3f1",
+              "on-tertiary-fixed": "#001f26",
+              "on-surface-variant": "#434943",
+              "on-secondary-fixed-variant": "#3c4b3c",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#a2ced9",
+              "outline": "#737973",
+              "on-primary-container": "#0b210b",
+              "inverse-on-surface": "#f0f1f0",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#3a656f",
+              "surface-bright": "#ffffff",
+              "primary": "#4cae4f",
+              "on-secondary-container": "#111f11",
+              "on-tertiary-container": "#001f26",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "secondary-container": "#d6e8d6",
+              "surface-dim": "#f6f7f6",
+              "on-error-container": "#410002",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#beeaf6",
+              "on-secondary-fixed": "#111f11",
+              "background": "#f6f7f6",
+              "primary-container": "#d0f0d1",
+              "on-surface": "#151d15",
+              "secondary-fixed-dim": "#baccb9",
+              "outline-variant": "#c3c8c3",
+              "on-background": "#151d15",
+              "primary-fixed": "#d0f0d1",
+              "on-error": "#ffffff",
+              "surface-variant": "#dee5de",
+              "secondary": "#536353"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-emerald-50/50 dark:bg-slate-900/50 backdrop-blur-md docked full-width top-0 z-50 sticky flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+  <a href="profile.html"><img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a serene young woman with soft lighting and a natural, blurred green background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiwCG_7OSl3lecyvdqNvTc0FDmIhZyyXZADUtJQxy3ptfkjhZQctk276vKgfJCxQ5zdBWMRie6_okDRyhXo9sfhtyDPqlo7D4H7P0Z4iCozdqudBCHEhDuDXFS8HZ1ZLENtkmH3eoPIREunylUTnDjPNN69-tXY1LuEnqd6138Y0jXR8NcO8TaouFGwNTV6quzHXltCouJ9OJVm3pXuLCP7Iv3gmWIcatlHJJyFuy-Krv1tS9BVOQS97UCTL4bb4ANELTr4kf8SQ"/></a>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-on-surface-variant">Welcome back,</span>
+<h1 class="font-['Inter'] font-bold tracking-tight text-xl text-emerald-700 dark:text-emerald-300">Firstname</h1>
+</div>
+</div>
+<div class="flex items-center gap-2">
+  <a href="notification.html"><button class="p-2 rounded-full hover:bg-emerald-100/50 dark:hover:bg-emerald-900/20 transition-colors scale-95 active:duration-150">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400" data-icon="notifications">notifications</span>
+</button></a>
+</div>
+</header>
+<main class="flex-grow flex flex-col px-6 pt-4 pb-24 max-w-2xl mx-auto w-full">
+<!-- Search & Back Action -->
+<div class="flex items-center gap-4 mb-8">
+  <a href="index.html"><button class="p-2 -ml-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface" data-icon="arrow_back">arrow_back</span>
+</button></a>
+<div class="relative flex-grow">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container border-none rounded-xl py-3 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline text-sm" placeholder="Search for Therapist" type="text"/>
+</div>
+</div>
+<!-- Coming Soon Hero Section -->
+<div class="flex-grow flex flex-col items-center justify-center text-center space-y-8 py-12">
+<!-- Asymmetric/Premium Glassmorphism Card -->
+<div class="relative w-full aspect-square max-w-[320px] flex items-center justify-center">
+<!-- Background Decorative Glow -->
+<div class="absolute inset-0 bg-primary/10 rounded-full blur-3xl opacity-50"></div>
+<!-- Main Illustration Container -->
+<div class="relative z-10 w-64 h-64 bg-surface rounded-[2.5rem] shadow-sm flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/30 to-transparent"></div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-8xl mb-2" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<div class="h-1 w-12 bg-primary/20 rounded-full"></div>
+</div>
+</div>
+<!-- Floating Accent Card -->
+<div class="absolute -bottom-4 -right-2 bg-white/80 backdrop-blur-md p-4 rounded-2xl shadow-sm border border-white/50 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="text-left">
+<p class="text-[10px] font-bold text-tertiary uppercase tracking-widest">Status</p>
+<p class="text-xs font-semibold text-on-surface">Planting Seeds</p>
+</div>
+</div>
+</div>
+<!-- Content -->
+<div class="space-y-4 max-w-xs">
+<h2 class="text-2xl font-headline font-bold text-on-surface tracking-tight">Coming Soon...</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                    Our team of licensed therapists is currently preparing their digital sanctuaries. We'll notify you as soon as they're ready to start the journey with you.
+                </p>
+</div>
+<!-- CTA/Subscription -->
+<div class="w-full space-y-3">
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl shadow-sm hover:opacity-90 transition-opacity active:scale-[0.98]">
+                    Notify Me When Ready
+                </button>
+<p class="text-[10px] text-outline uppercase tracking-widest font-bold">Join 1,200+ waiting for mindful growth</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white dark:bg-slate-950 z-50 border-t border-emerald-100 dark:border-emerald-900/30 shadow-[0_-4px_20px_0_rgba(0,0,0,0.03)] dark:shadow-none">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1.5 hover:text-emerald-600 dark:hover:text-emerald-300 active:scale-90 transition-transform duration-200" href="home.html">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-['Inter']">Home</span>
+</a>
+<!-- Therapist (Active based on search context) -->
+<a class="flex flex-col items-center justify-center bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-100 rounded-2xl px-4 py-1.5 transition-all active:scale-90 duration-200" href="therapist.html">
+<span class="material-symbols-outlined mb-1" data-icon="psychology" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-['Inter']">Therapist</span>
+</a>
+<!-- Journal -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1.5 hover:text-emerald-600 dark:hover:text-emerald-300 active:scale-90 transition-transform duration-200" href="resources.html">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-['Inter']">Journal</span>
+</a>
+<!-- AI Companion -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 px-4 py-1.5 hover:text-emerald-600 dark:hover:text-emerald-300 active:scale-90 transition-transform duration-200" href="ai.html">
+<span class="material-symbols-outlined mb-1" data-icon="smart_toy">smart_toy</span>
+<span class="text-[10px] font-bold uppercase tracking-wider font-['Inter']">AI Companion</span>
+</a>
+</nav>
+</body></html>

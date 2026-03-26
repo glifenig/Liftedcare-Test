@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - LiftedCare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#410002",
+              "primary": "#4cae4f",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#3c4b3c",
+              "primary-container": "#d0f0d1",
+              "outline-variant": "#c3c8c3",
+              "on-surface-variant": "#434943",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#baccb9",
+              "on-tertiary-fixed-variant": "#214d57",
+              "on-tertiary-fixed": "#001f26",
+              "surface-bright": "#ffffff",
+              "on-primary": "#ffffff",
+              "tertiary": "#3a656f",
+              "surface-variant": "#dee5de",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#359439",
+              "inverse-surface": "#2e312e",
+              "on-secondary-fixed": "#111f11",
+              "surface-container-high": "#e9ece9",
+              "secondary-container": "#d6e8d6",
+              "surface-container-lowest": "#ffffff",
+              "background": "#f6f7f6",
+              "tertiary-fixed": "#beeaf6",
+              "inverse-on-surface": "#f0f1f0",
+              "outline": "#737973",
+              "surface-tint": "#4cae4f",
+              "primary-fixed": "#d0f0d1",
+              "on-background": "#151d15",
+              "secondary": "#536353",
+              "on-primary-container": "#0b210b",
+              "surface-container": "#f1f3f1",
+              "on-tertiary-container": "#001f26",
+              "on-surface": "#151d15",
+              "surface-dim": "#f6f7f6",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d6e8d6",
+              "primary-fixed-dim": "#b5e3b6",
+              "on-secondary-container": "#111f11",
+              "inverse-primary": "#86d988",
+              "on-primary-fixed": "#002105",
+              "tertiary-fixed-dim": "#a2ced9",
+              "surface": "#ffffff",
+              "tertiary-container": "#beeaf6",
+              "surface-container-low": "#f8f9f8",
+              "surface-container-highest": "#e2e6e2",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-slate-50 dark:bg-slate-900 docked full-width top-0 z-50 bg-gradient-to-b from-slate-100 to-transparent dark:from-slate-800 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+  <a href="menu.html"><span class="material-symbols-outlined text-green-600 dark:text-green-400 cursor-pointer" data-icon="menu">menu</span></a>
+<h1 class="font-['Inter'] font-bold tracking-tight text-xl dark:text-slate-100 text-green-700 dark:text-green-400">LiftedCare</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border border-outline-variant/30">
+  <a href="profile.html"><img alt="User Profile" class="w-full h-full object-cover" data-alt="professional headshot of a smiling healthcare professional in a bright modern clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA46rmRX0zep-_JjNZ_C95DSnuL5rZdzhCQx96Fdavl6ga2SBl2QNOfB5MQDcO9BphV4xIye3tblbhHMg-3DCj71CY-7m9PGyPs1-JPvaOJDtbT3UH1ITWl3LFz2rkHMPV68ZIpw0i_Kfjp7aw_kr_k8dL-apHLJoesPvApk9_ELiEQ6ZFRIa6n2HkTjdwJtzHYfEU4R94crrhpM1-PSMFc3dqFFJKtv0Q7Unu_YKuXcZCcawLCS3UqRju8-Nbe4tZEj2ttEYKT5g"/></a>
+</div>
+</header>
+<main class="px-6 pt-8 max-w-md mx-auto">
+<!-- Header Section -->
+<div class="mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface mb-2">Get in touch</h2>
+<p class="text-on-surface-variant leading-relaxed">Have a question or feedback? We're here to support your journey towards tranquility.</p>
+</div>
+<!-- Form Card -->
+<div class="bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/20">
+<form action="#" class="space-y-5">
+<!-- Name Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-semibold text-on-surface-variant ml-1" for="name">Name</label>
+<input class="w-full bg-surface-container border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-outline" id="name" name="name" placeholder="Your full name" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-semibold text-on-surface-variant ml-1" for="email">Email address</label>
+<input class="w-full bg-surface-container border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-outline" id="email" name="email" placeholder="hello@example.com" type="email"/>
+</div>
+<!-- Subject Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-semibold text-on-surface-variant ml-1" for="subject">Subject</label>
+<div class="relative">
+<select class="w-full bg-surface-container border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-on-surface appearance-none cursor-pointer" id="subject" name="subject">
+<option disabled="" selected="" value="">Select a topic</option>
+<option value="general">General Inquiry</option>
+<option value="support">Technical Support</option>
+<option value="billing">Billing Question</option>
+<option value="feedback">Feedback</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Description Field -->
+<div class="space-y-1.5">
+<label class="block text-sm font-semibold text-on-surface-variant ml-1" for="description">Description</label>
+<textarea class="w-full bg-surface-container border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary text-on-surface placeholder:text-outline resize-none" id="description" name="description" placeholder="How can we help you today?" rows="4"></textarea>
+</div>
+<!-- File Upload -->
+<div class="space-y-1.5">
+<label class="block text-sm font-semibold text-on-surface-variant ml-1">Attachments</label>
+<div class="border-2 border-dashed border-outline-variant/50 rounded-xl p-6 flex flex-col items-center justify-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl group-hover:scale-110 transition-transform" data-icon="cloud_upload">cloud_upload</span>
+<p class="text-sm font-medium text-on-surface">Tap to upload files</p>
+<p class="text-xs text-outline mt-1">PDF, JPG, PNG up to 10MB</p>
+<input class="hidden" type="file"/>
+</div>
+</div>
+<!-- Send Button -->
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-xl shadow-sm hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-4" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-lg" data-icon="send">send</span>
+</button>
+</form>
+</div>
+<!-- Secondary Support Info -->
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-secondary-container/30 p-4 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="chat_bubble">chat_bubble</span>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Live Chat</span>
+<span class="text-xs text-on-secondary-container">2 min wait</span>
+</div>
+<div class="bg-tertiary-container/30 p-4 rounded-xl flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-tertiary mb-2" data-icon="mail">mail</span>
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary mb-1">Email</span>
+<span class="text-xs text-on-tertiary-container">24h response</span>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_20px_0_rgba(0,0,0,0.05)]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 opacity-70 hover:text-green-600 dark:hover:text-green-300">
+  <a href="resources.html"><span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-['Inter'] mt-1">Resources</span></a>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 opacity-70 hover:text-green-600 dark:hover:text-green-300">
+  <a href="community.html"><span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-['Inter'] mt-1">Community</span></a>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 opacity-70 hover:text-green-600 dark:hover:text-green-300">
+  <a href="notification.html"><span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-['Inter'] mt-1">Alerts</span></a>
+</div>
+<div class="flex flex-col items-center justify-center text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30 rounded-xl px-3 py-1 scale-110 transition-transform duration-300 ease-out">
+  <a href="contact.html"><span class="material-symbols-outlined" data-icon="contact_support" style="font-variation-settings: 'FILL' 1;">contact_support</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-['Inter'] mt-1">Support</span></a>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 opacity-70 hover:text-green-600 dark:hover:text-green-300">
+  <a href="settings.html"><span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="text-[10px] font-bold uppercase tracking-widest font-['Inter'] mt-1">Settings</span></a>
+</div>
+</nav>
+</body></html>

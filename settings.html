@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings | LiftedCare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#410002",
+              "primary": "#4cae4f",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#3c4b3c",
+              "primary-container": "#d0f0d1",
+              "outline-variant": "#c3c8c3",
+              "on-surface-variant": "#434943",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#baccb9",
+              "on-tertiary-fixed-variant": "#214d57",
+              "on-tertiary-fixed": "#001f26",
+              "surface-bright": "#ffffff",
+              "on-primary": "#ffffff",
+              "tertiary": "#3a656f",
+              "surface-variant": "#dee5de",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#359439",
+              "inverse-surface": "#2e312e",
+              "on-secondary-fixed": "#111f11",
+              "surface-container-high": "#e9ece9",
+              "secondary-container": "#d6e8d6",
+              "surface-container-lowest": "#ffffff",
+              "background": "#f6f7f6",
+              "tertiary-fixed": "#beeaf6",
+              "inverse-on-surface": "#f0f1f0",
+              "outline": "#737973",
+              "surface-tint": "#4cae4f",
+              "primary-fixed": "#d0f0d1",
+              "on-background": "#151d15",
+              "secondary": "#536353",
+              "on-primary-container": "#0b210b",
+              "surface-container": "#f1f3f1",
+              "on-tertiary-container": "#001f26",
+              "on-surface": "#151d15",
+              "surface-dim": "#f6f7f6",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d6e8d6",
+              "primary-fixed-dim": "#b5e3b6",
+              "on-secondary-container": "#111f11",
+              "inverse-primary": "#86d988",
+              "on-primary-fixed": "#002105",
+              "tertiary-fixed-dim": "#a2ced9",
+              "surface": "#ffffff",
+              "tertiary-container": "#beeaf6",
+              "surface-container-low": "#f8f9f8",
+              "surface-container-highest": "#e2e6e2",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-slate-900 text-slate-100 min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-slate-900 fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+  <a href="menu.html"><span class="material-symbols-outlined text-green-400">menu</span></a>
+<h1 class="text-xl font-bold tracking-tight text-slate-100">LiftedCare</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-green-500/30">
+  <a href="profile.html"><img alt="User profile avatar" class="w-full h-full object-cover" data-alt="professional headshot of a serene looking person with soft natural lighting and a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwsOhXuVEv1VP4M2X2FlG1f5Jd0qxqyDx6YHAi_HSHs8XKVfaZg_0evEhkOFTLjpocYJ9ttR8-YVLo2lB-13LjUnSv3eUJexuGmiOddEmEVFUVy2vFCS9muHJ5A_fMDLCCQDe8Hi4Mgh217A8MWUyLfVk6xVi7UBI5zHWTXi2NWb35Ia-ayTNseTTIqwn0XXN_0CVqgHssVsbFNWFhfsFd_-BPNjZl4mI9AJbqtQjpYRLrrxKZ3mHpwTk8lP5jUAw5IpAJCdycFg"/></a>
+</div>
+</header>
+<main class="pt-24 px-6">
+<!-- Header Section -->
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold tracking-tighter text-slate-50 mb-2">Settings</h2>
+<p class="text-slate-400 text-sm">Manage your mindful experience and privacy</p>
+</div>
+<!-- Bento Grid Settings Layout -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Accounts & Privacy (Highlight Card) -->
+<div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800 transition-all flex justify-between items-center group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-400">manage_accounts</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-100">Accounts &amp; Privacy</h3>
+<p class="text-xs text-slate-500">Security, data sharing, and sync</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-green-400 transition-colors">chevron_right</span>
+</div>
+<!-- Crisis Support (Urgent/Asymmetric Card) -->
+<div class="bg-red-500/10 p-6 rounded-xl border border-red-500/20 flex flex-col gap-4 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-red-500 text-8xl" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-red-400" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<h3 class="font-bold text-red-100">Crisis Support</h3>
+</div>
+<p class="text-sm text-red-200/70 max-w-[80%]">If you are in immediate danger or need urgent help, our crisis team is available 24/7.</p>
+<button class="bg-red-500 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">call</span>
+                    Get Help Now
+                </button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Help Line -->
+<div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex flex-col gap-3">
+<span class="material-symbols-outlined text-green-400">support_agent</span>
+<div>
+<h4 class="font-bold text-slate-100 text-sm">Help Line</h4>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Chat Support</p>
+</div>
+</div>
+<!-- Privacy Policy -->
+<div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700/50 flex flex-col gap-3">
+<span class="material-symbols-outlined text-green-400">gavel</span>
+<div>
+<h4 class="font-bold text-slate-100 text-sm">Privacy Policy</h4>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1">Legal Terms</p>
+</div>
+</div>
+</div>
+<!-- Feedback & Support -->
+<div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 flex justify-between items-center group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-slate-700/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-300 text-xl">maps_ugc</span>
+</div>
+<span class="font-semibold text-slate-200">Feedback &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-green-400 transition-colors">arrow_outward</span>
+</div>
+<!-- Rate Our App -->
+<div class="bg-gradient-to-br from-green-600/20 to-slate-800/50 p-6 rounded-xl border border-green-500/20 flex flex-col gap-4 text-center">
+<div class="flex justify-center gap-1">
+<span class="material-symbols-outlined text-green-400" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-green-400" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-green-400" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-green-400" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-green-400" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-bold text-slate-100">Enjoying the Sanctuary?</h3>
+<p class="text-xs text-slate-400 px-4">Your reviews help us grow and provide better care for the community.</p>
+<button class="text-green-400 font-bold text-sm hover:underline">Rate Our App</button>
+</div>
+</div>
+<!-- Footer Version Info -->
+<div class="mt-12 text-center">
+<p class="text-[10px] text-slate-600 font-bold uppercase tracking-[0.2em]">LiftedCare v2.4.0</p>
+<p class="text-[10px] text-slate-700 mt-1">Crafted for restorative digital health</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-slate-900/80 backdrop-blur-md shadow-[0_-4px_20px_0_rgba(0,0,0,0.05)] z-50 border-t border-slate-800">
+  <a href="resources.html"><div class="flex flex-col items-center justify-center text-slate-400 opacity-70 hover:text-green-300 transition-colors">
+<span class="material-symbols-outlined">library_books</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Resources</span>
+</div></a>
+  <a href="community.html"><div class="flex flex-col items-center justify-center text-slate-400 opacity-70 hover:text-green-300 transition-colors">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Community</span>
+</div></a>
+  <a href="notification.html"><div class="flex flex-col items-center justify-center text-slate-400 opacity-70 hover:text-green-300 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Alerts</span>
+</div></a>
+  <a href="contact.html"><div class="flex flex-col items-center justify-center text-slate-400 opacity-70 hover:text-green-300 transition-colors">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Support</span>
+</div></a>
+<div class="flex flex-col items-center justify-center text-green-400 bg-green-900/30 rounded-xl px-3 py-1 scale-110 transition-transform duration-300 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Settings</span>
+</div>
+</nav>
+</body></html>
